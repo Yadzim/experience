@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fibanati sonlar</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: monospace;
+        text-align: center;
+        font-size: 18px;
+        font-weight: 500;
+    }
+    body{
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        position: relative;
+        padding: 50px;
+        background: #fdf900;
+    }
+    .contener{
+        height: 280px;
+        display: grid;
+        grid-template-columns: auto auto auto auto auto;
+    }
+    input{
+        width: 200px;
+        height: 50px;
+        border: none;
+        border-radius: 10px;
+        padding: .5rem;
+        background-color: #f1f1f1;
+        margin: 10px;
+        outline: none;
+        background: #17a2ff;
+    }
+    input::placeholder{
+        font-size: 14px;
+        color: #000;
+    }
+    input:focus{
+        border: 1px solid #666;
+    }
+    #in{
+        margin-top: 100px;
+    }
+    span{
+        margin-top: 70px;
+    }
+    .span2{
+        margin-top: 160px;
+    }
+    button{
+        width: 100px;
+        height: 50px;
+        margin: 20px;
+        margin-top: 200px;
+        border-radius: 15px;
+        background: linear-gradient(#fff, #0f0);
+        box-shadow: 2px 2px 6px 2px rgb(170, 174, 170);
+        border: 1px solid #666;
+        outline: none;
+        transition: 0.3s linear;
+    }
+    button:hover{
+        background: linear-gradient(#fff, rgb(1, 155, 1));
+    }
+    button:active{
+        background: none;
+        background: linear-gradient( #0F0, #fff);
+        box-shadow: none;
+        box-shadow: -2px -2px 5px rgb(170, 174, 170);
+    }
+    p{
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 30px;
+        margin-top: 20px;
+    }
+</style>
+<body>
+    <div class="contener">
+        <input type="text" id="in1">
+        <span class="span1">dan</span>
+        <input type="text" id="in">
+        <span class="span2">gacha son kiriting</span>
+        <button id="btn" onclick="func()">Output</button>
+    </div>
+    
+    <p id="sens"></p>
+    <p id="send"></p>
+<br>
+    <script src="./main.js"></script>
+</body>
+</html>
