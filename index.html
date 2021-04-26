@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fibanati sonlar</title>
+    <title>Fibonacci sonlar</title>
 </head>
 <style>
     *{
@@ -27,15 +27,15 @@
         background: #fdf900;
     }
     .contener{
-        height: 280px;
+        height: 350px;
         display: grid;
         grid-template-columns: auto auto auto auto auto;
     }
     input{
-        width: 200px;
-        height: 50px;
+        width: 250px;
+        height: 70px;
         border: none;
-        border-radius: 10px;
+        border-radius: 15px;
         padding: .5rem;
         background-color: #f1f1f1;
         margin: 10px;
@@ -43,54 +43,56 @@
         background: #17a2ff;
     }
     input::placeholder{
-        font-size: 14px;
-        color: #000;
+        font-size: 18px;
+        color: rgb(65, 65, 65);
     }
     input:focus{
-        border: 1px solid #666;
+        border: 2px solid #555;
     }
     #in{
-        margin-top: 100px;
+        margin-top: 145px;
     }
     span{
-        margin-top: 70px;
+        font-size: 22px;
+        margin: 10px;
+        margin-top: 95px;
     }
     .span2{
-        margin-top: 160px;
+        margin-top: 235px;
     }
     button{
-        width: 100px;
-        height: 50px;
+        width: 150px;
+        height: 70px;
         margin: 20px;
-        margin-top: 200px;
-        border-radius: 15px;
-        background: linear-gradient(#fff, #0f0);
-        box-shadow: 2px 2px 6px 2px rgb(170, 174, 170);
+        margin-top: 280px;
+        border-radius: 20px;
+        background: linear-gradient(#fff, rgb(2, 170, 2));
+        box-shadow: 2px 2px 6px 2px rgb(74, 75, 70);
         border: 1px solid #666;
         outline: none;
         transition: 0.3s linear;
     }
     button:hover{
-        background: linear-gradient(#fff, rgb(1, 155, 1));
+        background: linear-gradient(#fff, rgb(1, 136, 1));
     }
     button:active{
         background: none;
-        background: linear-gradient( #0F0, #fff);
+        background: linear-gradient( rgb(2, 170, 2), #fff);
         box-shadow: none;
-        box-shadow: -2px -2px 5px rgb(170, 174, 170);
+        box-shadow: -2px -2px 5px rgb(74, 75, 70);
     }
     p{
-        font-size: 20px;
+        font-size: 25px;
         font-weight: 600;
-        line-height: 30px;
-        margin-top: 20px;
+        line-height: 40px;
+        margin-top: 30px;
     }
 </style>
 <body>
     <div class="contener">
-        <input type="text" id="in1">
+        <input type="text" id="in1" placeholder="Oraliq boshi">
         <span class="span1">dan</span>
-        <input type="text" id="in">
+        <input type="text" id="in" placeholder="Oraliq oxiri">
         <span class="span2">gacha son kiriting</span>
         <button id="btn" onclick="func()">Output</button>
     </div>
